@@ -1,0 +1,55 @@
+name: "✨ Feature Request"
+description: "Suggest an enhancement or new idea for this node."
+title: "[FEATURE] "
+labels: ["enhancement"]
+assignees: "rookiepsi"
+
+body:
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: "What is the problem this feature would solve?"
+      description: "A clear and concise description of why this change is needed. What goal is currently difficult to achieve?"
+      placeholder: "Example: It's currently difficult to achieve [some goal] because the node is missing [some capability]. Adding this feature would make [a certain kind of workflow] possible or easier."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: enhancement-type
+    attributes:
+      label: "What is the nature of your request?"
+      description: "Select the primary type of change you are proposing."
+      options:
+        - A new feature or capability for the node.
+        - A change or improvement to an existing feature.
+        - A quality-of-life or user experience improvement (e.g., better error messages, new widget).
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: "Describe your proposed solution"
+      description: "Please be as specific as possible. How would you like the node to work?"
+      placeholder: |
+        Details of your proposal...
+        - **For a new feature:** "I propose the node should also be able to do [X]. This could be implemented by adding a new input named `...` or a widget named `...`."
+        - **For a change to an existing feature:** "Currently, the `intensity` input works by [doing Y]. I suggest it should be changed to [do Z] instead, because..."
+        - **For a QoL improvement:** "The error message when [something goes wrong] is unclear. It should say `...` instead."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Have you considered any alternative solutions or workarounds?"
+      description: "A clear and concise description of any alternative solutions you've considered or workarounds you are currently using."
+      placeholder: "I've tried connecting nodes X and Y to achieve this, but it's not ideal because..."
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Add any other context, mockups, or screenshots about the feature request here. Mockups are extremely helpful!"
+      placeholder: "You can drag and drop images or files into this text area."
