@@ -13,6 +13,7 @@ jobs:
   publish-node:
     name: Publish Custom Node to Registry
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'rookiepsi' }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
